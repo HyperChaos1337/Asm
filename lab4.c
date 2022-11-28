@@ -22,8 +22,8 @@ int main(){
     __asm(
         "\t push ds \n"
         "\t pop es \n"
-        "\t mov esi, offset input_str \n"
-        "\t mov edi, offset output_str \n"
+        "\t mov esi, offset input_str \n" ; Здесь выдает ошибку
+        "\t mov edi, offset output_str \n" ; И здесь тоже
         "\t operation: \n"
         "\t lodsb \n"
             "\t cmp %al, 32 \n"
